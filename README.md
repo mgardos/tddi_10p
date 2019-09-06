@@ -1,15 +1,14 @@
 # tddi_10p
 
-tinyurl.com/c6-10pines
-aguanteTDD
+- url -> tinyurl.com/c6-10pines
+- aguanteTDD
 
 ## Roman numbers
-Kata
-Coding Dojo
-Randori
+- Kata
+- Coding Dojo
+- Randori
 
 ## Tus libros
-
 La editorial “TusLibros” desea actualizar su oferta de ventas de libros abriendo un canal on-line.
 El sistema que poseen actualmente funciona de manera batch, de tal forma que reciben archivos con los pedidos y devuelven archivos con los resultados de las compras. Su plan de actualización consta de dos etapas:
 
@@ -57,3 +56,38 @@ bookIsbn: ISBN del libro que se desea agregar. Debe ser un ISBN de la editorial
 bookQuantity: Cantidad de libros que se desean agregar. Debe ser >= 1.
 Output:
 En caso de éxito: 0|OK
+En caso de error: 1|DESCRIPCION_DE_ERROR
+3) Recurso: /listCart
+Parámetros:
+cartId: Id del carrito creado con /createCart
+Output:
+En caso de éxito: 0|ISBN_1|QUANTITY_1|ISBN_2|QUANTITY_2|....|ISBN_N|QUANTITY_N
+En caso de error: 1|DESCRIPCION_DE_ERROR
+4) Recurso: /checkOutCart
+Parámetros:
+cartId: Id del carrito creado con /createCart
+ccn: Número de tarjeta de credito
+cced: Fecha de expiración con 2 digitos para el mes y 4 para el año
+cco: Nombre del dueño de la tarjeta.
+Output:
+En caso de éxito: 0|TRANSACTION_ID
+En caso de error: 1|DESCRIPCION_DE_ERROR
+5) Recurso: /listPurchases
+Parámetros:
+clientId: ID del cliente que quiere ver que compras hizo
+password: Password del cliente que valida que puede operar con TusLibros.com
+Output:
+En caso de éxito: 0|ISBN_1|QUANTITY_1|....|ISBN_N|QUANTITY_N|TOTAL_AMOUNT
+En caso de error: 1|DESCRIPCION_DE_ERROR
+
+Si el request realizado no cumple con las reglas sintácticas, se debe devolver HTTP 400 (Bad request). Si cumple con la
+sintaxis se debe devolver HTTP 200 (OK).
+
+
+## Casos de prueba
+Carro nuevo vacio
+Agregar libro al carro, carro no vacio
+Agregar varios libros al carro, verificar que el carro los contiene
+Agregar varios libros iguales al carro, verificar que el carro los contiene
+Agregar solo libros de la editorial al carro
+Agregar solo cantidad positiva de libros al carro
