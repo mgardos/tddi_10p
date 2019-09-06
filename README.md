@@ -84,10 +84,13 @@ Si el request realizado no cumple con las reglas sintácticas, se debe devolver 
 sintaxis se debe devolver HTTP 200 (OK).
 
 
-## Casos de prueba
-Carro nuevo vacio
-Agregar libro al carro, carro no vacio
-Agregar varios libros al carro, verificar que el carro los contiene
-Agregar varios libros iguales al carro, verificar que el carro los contiene
-Agregar solo libros de la editorial al carro
-Agregar solo cantidad positiva de libros al carro
+## Casos de prueba para carrito y elección de libros
+- Carro nuevo vacio
+- Agregar libro al carro, carro no vacio
+- Agregar varios libros al carro, verificar que el carro los contiene
+- Agregar varios libros iguales al carro, verificar que el carro los contiene
+- Agregar solo libros de la editorial al carro
+- Agregar solo cantidad positiva de libros al carro
+
+## Casos de prueba para cajero y compra
+- 
