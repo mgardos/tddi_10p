@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>ar.net.mgardos</groupId>
   <artifactId>tus-libros</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>tus-libros</name>
-  <url>http://maven.apache.org</url>
-    
+  <url>https://github.com/mgardos/tddi_10p/</url>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
-    
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -24,10 +27,11 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-    
+
   <modules>
     <module>tus-libros-seller</module>
     <module>tus-libros-merchant</module>
+    <module>tus-libros-storefront</module>
   </modules>
-  
+
 </project>

@@ -8,9 +8,9 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tus-libros-seller</artifactId>
+  <artifactId>tus-libros-storefront</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>tus-libros-seller</name>
+  <name>tus-libros-storefront</name>
   <url>https://github.com/mgardos/tddi_10p/</url>
 
   <dependencies>
@@ -20,5 +20,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
 </project>
