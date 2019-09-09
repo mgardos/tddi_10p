@@ -93,4 +93,12 @@ sintaxis se debe devolver HTTP 200 (OK).
 - Agregar solo cantidad positiva de libros al carro
 
 ## Casos de prueba para cajero y compra
-- 
+- Procesar compra solo si carro contiene libros
+- Procesar compra si el costo total de la misma coincide con el total de la suma de precios de libros en el carro
+- Procesar compra con tarjeta de debito/credito valida 
+- Registrar compra exitosa
+
+## Casos de prueba para facturacion por tarjeta debito/credito
+- Facturar cuando sistema de facturacion caido
+- Facturar cuando tarjeta invalida
+- Facturar exitosamente
