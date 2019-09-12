@@ -3,6 +3,16 @@
 - url -> tinyurl.com/c6-10pines
 - aguanteTDD
 
+## Soluciones
+- Romanos: Romanos-TDD
+- TusLibros 1: tuslibros1
+- TusLibros 2: cajeroloco
+- TusLibros 3: simulando
+- TusLibros 4: fin
+
+## Herramientas
+https://www.diagrameditor.com/
+
 ## Roman numbers
 - Kata
 - Coding Dojo
@@ -100,5 +110,12 @@ sintaxis se debe devolver HTTP 200 (OK).
 
 ## Casos de prueba para facturacion por tarjeta debito/credito
 - Facturar cuando sistema de facturacion caido
-- Facturar cuando tarjeta invalida
+- Facturar cuando tarjeta invalida (vencida, cancelada, inhabilitada, sin fondos suficientes)
+- Facturar cuando monto menor o igual a cero
+- Facturar carro una sola vez
 - Facturar exitosamente
+
+## Casos de prueba para capa de aplicacion y api rest
+- Crear un carro con id de cliente y clave validos
+- Agregar libro al carro
+- Invalidar carro luego de 30 minutos desde ultima operacion
