@@ -4,6 +4,9 @@ import java.util.Map;
 
 import static java.util.stream.Collectors.summingDouble;
 
+/**
+ * Handles the checkout process
+ */
 public class Cashier {
     static final String INVALID_CART = "Unable to checkout empty Cart.";
 
